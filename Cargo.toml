@@ -1,0 +1,9 @@
+[package]
+name = "proxy_load_balancer"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+hyper = { version = "1.4.1", features = ["full"] }
+tokio = { version = "1.39.3", features = ["full"] }
+tower = { version = "0.5.0", features = ["full"] }

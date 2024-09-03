@@ -19,7 +19,6 @@ impl LoadBalancer {
     }
 
     pub fn forward_request(&mut self, req: Request<Body>) -> ResponseFuture {
-      println!("worker {}", self.curr_worker);
       let mut worker_uri = self.get_worker().to_owned();
       if let Some(path_and_query) = req.uri().path_and_query() {
           worker_uri.push_str(path_and_query.as_str());

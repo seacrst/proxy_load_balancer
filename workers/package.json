@@ -1,0 +1,15 @@
+{
+  "name": "workers",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "concurrently \"PORT=3001 node main.mjs\" \"PORT=3002 node main.mjs\" \"PORT=3003 node main.mjs\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "concurrently": "^8.2.2",
+    "express": "^4.19.2"
+  }
+}

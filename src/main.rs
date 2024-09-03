@@ -10,6 +10,7 @@ async fn main() {
   let workers = vec![
     "http://localhost:3001".to_string(),
     "http://localhost:3002".to_string(),
+    "http://localhost:3003".to_string(),
   ];
 
   let balancer = Arc::new(RwLock::new(LoadBalancer::new(workers)));
